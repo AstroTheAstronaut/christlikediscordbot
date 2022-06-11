@@ -12,9 +12,9 @@ module.exports = {
             return "Oops! You forgot to tell me whose avatar you want to see!"
       const response = new MessageEmbed()
       .setColor('#BCCEF1')
-      .setAuthor(`${targetUser.tag}\'s avatar`)
+      .setAuthor({text:`${targetUser.tag}'s avatar`})
       .setDescription(targetUser.displayAvatarURL({dynamic:true}))
-      .setFooter
+      .setFooter({text:`Requested by: ${message.author.tag} • Made with ❤️ by Astro for CHRISTLIKE`})
       channel.send({ embeds: [response] });
     },
   }
