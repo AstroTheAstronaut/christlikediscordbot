@@ -6,7 +6,7 @@ module.exports = {
     slash: 'both', // Create both a slash and legacy command
     testOnly: false, // Only register a slash command for the testing guilds
     
-    callback: ({ channel }) => {
+    callback: ({ channel,message }) => {
       const embedNoDebate = new MessageEmbed()
         .setTitle("Please don't debate!")
         //.setDescription(`Please do not debate in this channel! Feel free to take this interesting conversation to a channel meant for debating, such as <#841255395598663730>.`)

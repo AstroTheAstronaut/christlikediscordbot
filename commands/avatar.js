@@ -6,7 +6,7 @@ module.exports = {
     slash: 'both', // Create both a slash and legacy command
     testOnly: false, // Only register a slash command for the testing guilds
     
-    callback: ({ message,guild, args }) => {
+    callback: ({ message,channel,guild, args }) => {
       const targetUser = message.mentions.users.first() || message.author;
         if(!targetUser)
             return "Oops! You forgot to tell me whose avatar you want to see!"
