@@ -14,5 +14,6 @@ module.exports = {
       .setColor('#BCCEF1')
       .setAuthor(`${targetUser.tag}\'s avatar`)
       .setDescription(targetUser.displayAvatarURL({dynamic:true}))
+      .setFooter
     },
   }
