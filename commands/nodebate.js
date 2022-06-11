@@ -14,11 +14,20 @@ module.exports = {
         .setFooter({text:`Made with ❤️ by Astro for CHRISTLIKE`})
         .setColor('#BCCEF1')
         channel.send({ embeds: [embedNoDebate] }); */
-        const noDebateEmbed = new MessageEmbed()
+        const debateEmbed = {
+            color:'#bcef1',
+            title: "Please don't debate here!",
+            description:`Please keep all debates in <#841255395598663730> ! Refusal to do so may lead to a warning!`,
+            footer:{
+              text:'Made with ❤️ by Astro for CHRISTLIKE'
+            },
+        };
+        /* const noDebateEmbed = new MessageEmbed()
           .setTitle("Please don't debate here!")
           .setDescription(`Please keep all debates in <#841255395598663730>! Refusal to do so may lead to a warning!`)
           .setFoother({text:"Made with ❤️ by Astro for CHRISTLIKE"})
-          .setColor('#BCEF1')
-          await channel.send({embeds:[noDebateEmbed]});
+          .setColor('#BCEF1') */
+          channel.send({ embeds: [debateEmbed] });
+
     },
   }
