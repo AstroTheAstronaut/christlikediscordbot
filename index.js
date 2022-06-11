@@ -14,7 +14,7 @@ const client = new DiscordJS.Client({
     Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
   ],
 })
-/* const TOKEN = "OTg0NzEyNDc4MjA4NDUwNTgw.Gzpg69.Lu27AS0zV0yVxcpYgGCkVfCU_wV8G-WubRu8FY" */
+
 client.on('ready', () => {
   new WOKCommands(client, {
     // The name of the local folder for your command files
