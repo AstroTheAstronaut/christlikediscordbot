@@ -13,6 +13,6 @@ module.exports = {
         .setDescription(`Please keep all debates in <#841255395598663730>! Refusal to do so may lead to a warning!`)
         .setFooter({text:`Requested by: ${message.author.tag} • Made with ❤️ by Astro for CHRISTLIKE`})
         .setColor('#BCCEF1')
-        channel.send({ embeds: [embed] });
+        channel.send({ embeds: [embedNoDebate] });
     },
   }
