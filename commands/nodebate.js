@@ -19,6 +19,6 @@ module.exports = {
           .setDescription(`Please keep all debates in <#841255395598663730>! Refusal to do so may lead to a warning!`)
           .setFoother({text:"Made with ❤️ by Astro for CHRISTLIKE"})
           .setColor('#BCEF1')
-          channel.send({embeds:[noDebateEmbed]});
+          await channel.send({embeds:[noDebateEmbed]});
     },
   }
