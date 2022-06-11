@@ -1,0 +1,26 @@
+{
+  "name": "testwok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroTheAstronaut/christlikediscordbot.git"
+  },
+  "author": "Matteo S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstroTheAstronaut/christlikediscordbot/issues"
+  },
+  "homepage": "https://github.com/AstroTheAstronaut/christlikediscordbot#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.3.6",
+    "path": "^0.12.7",
+    "wokcommands": "^1.5.3"
+  }
+}
