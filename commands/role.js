@@ -3,7 +3,7 @@ const actions = ['give', 'has', 'remove']
 module.exports = {
     category: 'Moderation command',
     description: 'Give a role, takes a role or checks if an user has a role', // Required for slash commands
-    permissions:['MANAGE_MEMBERS'],
+    permissions:['KICK_MEMBERS'],
     minArgs: 3,
     expectedArgs: `<"${actions.join('","')}"> <user @> <role @>}`,
     slash: 'both', // Create both a slash and legacy command
