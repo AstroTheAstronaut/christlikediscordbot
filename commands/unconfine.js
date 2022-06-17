@@ -4,7 +4,7 @@ module.exports = {
     permissions:['MUTE_MEMBERS'],
     slash: 'both', // Create both a slash and legacy command
     testOnly: false, // Only register a slash command for the testing guilds
-    
+    cooldown:'5s',
     callback: ({ message,guild, args }) => {
       const targetUser = message.mentions.users.first()
         if(!targetUser)

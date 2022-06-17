@@ -4,6 +4,7 @@ module.exports = {
     category: 'Moderation command',
     description: 'Give a role, takes a role or checks if an user has a role', // Required for slash commands
     permissions:['KICK_MEMBERS'],
+    cooldown:'5s',
     minArgs: 3,
     expectedArgs: `<"${actions.join('","')}"> <user @> <role @>}`,
     slash: 'both', // Create both a slash and legacy command

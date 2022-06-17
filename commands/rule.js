@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
     category: 'General Commands',
     description: 'Sends the specified rule in chat', // Required for slash commands
-    
+    cooldown:'5s',
     slash: 'both', // Create both a slash and legacy command
     testOnly: false, // Only register a slash command for the testing guilds,
     options:[

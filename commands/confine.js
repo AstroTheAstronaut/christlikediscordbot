@@ -3,6 +3,7 @@ module.exports = {
     description: 'Gives an user the Confined Member role (confines the user)', // Required for slash commands
     permissions:['MUTE_MEMBERS'],
     slash: 'both', // Create both a slash and legacy command
+    cooldown:'5s',
     testOnly: false, // Only register a slash command for the testing guilds
     
     callback: ({ message,guild, args }) => {
