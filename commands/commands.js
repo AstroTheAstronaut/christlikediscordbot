@@ -8,7 +8,8 @@ module.exports = {
   callback: ({ channel, interaction }) => {
     const commandsEmbed = {
       color: '#bcef1',
-      title: "IHere are all the commands I currently have:",
+      title: "Here are all the commands I currently have:",
+      description:'Commands:',
       fields: (
         { name: 'commands', value: 'Lists all the commands.' },
         { name: 'confine', value: 'Gives the Confined Member role.' },
