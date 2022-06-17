@@ -21,9 +21,9 @@ module.exports = {
     
     callback: async ({ args, channel, interaction }) => {
       const action = args.shift()
-      // if(!action || !actions.includes(action)){
-      //   return `I don't know which rule to quote!!`
-      // }
+      if(!action || !actions.includes(action)){
+        return `I don't know which rule to quote!!`
+      }
 
       if(action === '1'){
         const rule1Embed = {
@@ -182,6 +182,6 @@ module.exports = {
         };
       channel.send({ embeds: [rule15Embed] });
       }
-      return `I don't know what this rule is!`
+      // return `I don't know what this rule is!`
     },
   }
