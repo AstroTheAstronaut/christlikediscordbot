@@ -6,7 +6,7 @@ module.exports = {
     testOnly: false, // Only register a slash command for the testing guilds
     
     callback: ({ message, interaction }) => {
-      const reply = `Pong! The bot's ping is ${Date.now()-message.createdTimestamp}ms. API latency is ${Math.round(client.ws.ping)}ms`
+      const reply = `Pong! The bot's ping is ${Date.now()-interaction.createdTimestamp}ms. API latency is ${Math.round(client.ws.ping)}ms`
   
       // message is provided only for a legacy command
       if (message) {
