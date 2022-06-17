@@ -12,7 +12,7 @@ module.exports = {
     options:[
         {
           name:'action',
-          description: 'the action to perform',
+          description: 'The action to perform',
           type: 'STRING',
           required: 'true',
           choices: actions.map((action)=> ({
