@@ -26,6 +26,6 @@ module.exports = {
       },
 
     };
-    channel.send({ embeds: [debateEmbed] });
+    channel.send({ embeds: [commandsEmbed] });
   },
 }
