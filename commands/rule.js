@@ -22,7 +22,7 @@ module.exports = {
     callback: async ({ args, channel, interaction }) => {
       const action = args.shift()
       if(!action || !actions.includes(action)){
-        return `I don't know which rule to quote!`
+        return `I don't know which rule to quote!!`
       }
 
       if(action === '1'){
