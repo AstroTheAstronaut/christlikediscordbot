@@ -33,7 +33,7 @@ module.exports = {
             required:true,
         },
       ],
-    callback: ({ guild, args, message, interaction }) => {
+    callback: async ({ guild, args, message, interaction }) => {
         const action = args.shift()
         if(!action || !actions.includes(action)){
             return `Unknown action! Please use one of the following: ${actions.join(', ')}`
