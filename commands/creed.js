@@ -8,7 +8,7 @@ module.exports = {
     cooldown: '5s',
     testOnly: false, // Only register a slash command for the testing guilds
 
-    callback: ({ message, interaction }) => {
+    callback: ({ channel, interaction }) => {
         //const reply = `🏓 Pong!`
         const creedEmbed = {
             color: '#bcef1',
