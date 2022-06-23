@@ -30,11 +30,15 @@ module.exports = {
                 },
                 {
                     name:'Server age:',
-                    value:`${moment(Member.joinedAt).format('MMMM Do YYYY, h:mm:ss a')}\\n**-** ${moment(Member.joinedAt).startOf('day').fromNow()}`
+                    value:`<t:${parseInt(target.joinedTimestamp / 1000)}:R>`,
+                    inline:true
+                    //value:`${moment(Member.joinedAt).format('MMMM Do YYYY, h:mm:ss a')}\\n**-** ${moment(Member.joinedAt).startOf('day').fromNow()}`
                 },
                 {
                     name:'Account age:',
-                    value:`${moment(Member.createdAt).format('MMMM Do YYYY, h:mm:ss a')}\\n**-** ${moment(Member.createdAt).startOf('day').fromNow()}`
+                    value:`<t:${parseInt(target.user.createdTimestamp / 1000)}:R>`,
+                    inline:true
+                    //value:`${moment(Member.createdAt).format('MMMM Do YYYY, h:mm:ss a')}\\n**-** ${moment(Member.createdAt).startOf('day').fromNow()}`
                 }
             ]
         }
