@@ -16,7 +16,7 @@ module.exports = {
             color: '#bcef1',
             description: `${target.username}'s info:`,
             footer:{
-                text:'Made with ❤️ by Astro for CHRISTLIKE!'
+                text:'Made with ❤️ by Astro for CHRISTLIKE'
             },
             fields: [ 
                 {
