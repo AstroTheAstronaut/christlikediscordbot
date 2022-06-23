@@ -9,7 +9,7 @@ module.exports = {
     testOnly: false, // Only register a slash command for the testing guilds
     
     callback: ({ message, interaction }) => {
-        const target = message.mentions.users.first() || message.author()
+        const target = message.mentions.users.first() || message.member()
         const Member = message.guild.members.cache.get(target.id)
 
         const responseEmbed = {
