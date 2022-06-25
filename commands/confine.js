@@ -23,7 +23,7 @@ module.exports = {
         if(role && targetUser){
             dude?.roles.add(role)
             dude?.roles.remove(verifiedRole)
-
+            dude?.roles.remove(permsRole)
             return `User ${targetUser} has been confined for a short period of time.`
         }
     },

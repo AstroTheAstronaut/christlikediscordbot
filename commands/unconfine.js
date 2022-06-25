@@ -21,7 +21,7 @@ module.exports = {
         const dude = guild?.members.cache.get(targetUser.id)
         if(role && targetUser){
             dude?.roles.remove(role)
-
+            dude?.roles.add(permsRole)
             dude?.roles.add(verifiedRole)
             return `User ${targetUser} is now free! Hooray!`
         }
