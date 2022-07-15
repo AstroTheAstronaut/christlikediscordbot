@@ -17,5 +17,6 @@ module.exports = {
           text:'Made with ❤️ by Astro for CHRISTLIKE'
         },
     };
+    channel.send({ embeds: [imageEmbed] });
     },
   }
